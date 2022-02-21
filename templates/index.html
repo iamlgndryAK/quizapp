@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz app by Aadil</title>
+</head>
+<body>
+    <h1 style="text-align:center">Welcome to Quiz WebApp By Aadil</h1>
+    <h1>
+        {{ item["question"] }}
+    </h1>
+    <a href="{{ url_for('check_true', index=data.index(item)) }}">
+        <h1>True</h1>
+    </a>
+    <a href="{{ url_for('check_false', index=data.index(item)) }}">
+        <h1>False</h1>
+    </a>
+</body>
+</html>
